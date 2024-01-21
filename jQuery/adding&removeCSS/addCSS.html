@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    $("#test").addClass("box");
+  });
+  $("#btn2").click(function(){
+    $("#test").removeClass("box");
+  });
+  $("#btn3").click(function(){
+  $("#test").toggleClass("box");
+});
+});
+</script>
+<style>
+.box{
+    color:red;
+    background-color: yellow;
+    padding:20px;
+    font-family: "Verdana";
+    }
+</style>
+</head>
+<body>
+
+<h1>Adding & Removing CSS from text</h1>
+<p id="test">Hello World</p>
+
+<button id="btn1">Set CSS</button>
+<button id="btn2">Remove CSS</button>
+<button id="btn3">Toggle Button</button>
+
+</body>
+</html>
